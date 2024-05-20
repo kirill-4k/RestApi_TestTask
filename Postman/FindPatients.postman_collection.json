@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "8451901e-5045-4804-9530-879671949d7e",
+		"name": "FindPatients",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35044440"
+	},
+	"item": [
+		{
+			"name": "NotEqualDate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Patients/Find?query=ne2022-01-01",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Patients",
+						"Find"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "ne2022-01-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NotEqualDateNegativ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/Patients/Find?query=ne2000-05-20",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Patients",
+						"Find"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "ne2000-05-20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EqDateTime",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Patients/Find?query=eq2000-05-20T05:45:03.655",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Patients",
+						"Find"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "eq2000-05-20T05:45:03.655"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lowerThan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Patients/Find?query=lt2000-05-20T05:45:03.655",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Patients",
+						"Find"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "lt2000-05-20T05:45:03.655"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GreaterThan Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Patients/Find?query=gt2000-05-20T05:45:03.655",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Patients",
+						"Find"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "gt2000-05-20T05:45:03.655"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lowerOrEqThan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Patients/Find?query=le2000-05-20T05:45:03.655",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Patients",
+						"Find"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "le2000-05-20T05:45:03.655"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GreaterOrEqThan Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Patients/Find?query=ge2000-05-20T05:45:03.655",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Patients",
+						"Find"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "ge2000-05-20T05:45:03.655"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EqDate Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/Patients/Find?query=eq2000-05-20",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"Patients",
+						"Find"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "eq2000-05-20"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

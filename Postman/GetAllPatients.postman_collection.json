@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "23af918f-b2c2-4d6c-b46c-84c72abec2d8",
+		"name": "GetAllPatients",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35044440"
+	},
+	"item": [
+		{
+			"name": "https://localhost:5001/api/Patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/api/GetAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

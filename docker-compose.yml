@@ -1,0 +1,34 @@
+version: '3.4'
+
+services:
+  # client:
+  #   image: ${DOCKER_REGISTRY-}client
+  #   build:
+  #     context: .
+  #     dockerfile: Client/Dockerfile
+  #   depends_on:
+  #     - restapi
+
+  restapi:
+    image: ${DOCKER_REGISTRY-}restapi
+    build:
+      context: .
+      dockerfile: RestApi/Dockerfile
+    networks:
+      - compose-network
+  sql:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    container_name: sql_server2022
+    ports: # not actually needed, because the two services are on the same network
+      - "1433:1433" 
+    environment:
+      - ACCEPT_EULA=y
+      - SA_PASSWORD=A&VeryComplex123Password
+    networks:
+      - compose-network
+
+
+networks:
+  compose-network:
+   name: compose-network
+  
